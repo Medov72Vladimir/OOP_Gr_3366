@@ -1,3 +1,6 @@
+/** 
+ * Дата создания 18.04.2023г
+*/
 package Products;
 public class BottleOfWater extends Product {
     private int volume;
