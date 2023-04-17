@@ -1,3 +1,6 @@
+/** 
+ * Дата создания 18.04.2023г
+*/
 package VendingMachines;
 import Products.Product;
 import java.util.*;
@@ -11,8 +14,6 @@ public class VendingMachine{
     private List<Product> products;
     /** журнал учета покупок*/
     private List<String> workLog;
-    /** оплата */
-    private double money;
     /**
      * Конструктор 
      * @param volume вместимость автомата выдачи продуктов
