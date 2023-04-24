@@ -14,8 +14,8 @@ public class App {
     public static void main(String[] args) throws Exception {
        Market market = new Market();
        iActorBehaviour item1 = new OrdinaryClient("Vova");
-       iActorBehaviour item2 = new SpecialClient("Petr", 1101);
-       iActorBehaviour item3 = new PromoClient("Ivan", "1+1=1", 11);
+       iActorBehaviour item2 = new SpecialClient("Petr", 1000);
+       iActorBehaviour item3 = new PromoClient("Ivan", "1+1=3", 10);
        /**
         * Обычный клиент.
         */
@@ -28,10 +28,9 @@ public class App {
        market.takeOrder();
        market.giveOrder();
        market.releaseFromQueue();
-       /**
-        * Акционный клиент (отказ в обслуживании).
+         /*
+        * Акционный клиент.
         */
-       market.acceptToMarket(item3);
-       market.checkPromo(item3);         
+       market.acceptToMarket(item3);       
     }
 }
