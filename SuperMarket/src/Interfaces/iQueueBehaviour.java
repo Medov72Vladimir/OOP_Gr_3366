@@ -25,8 +25,4 @@ public interface iQueueBehaviour{
      * Возвращает заказ клиента.
      */
     void returnOrder();    
-    /**
-     * проверка на акцию
-     */
-    void checkPromo(iActorBehaviour actor);
 }

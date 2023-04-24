@@ -106,18 +106,4 @@ public class Market implements iMarketBehaviour,iQueueBehaviour{
             }
         }
     }
-    /**
-     * Метод проверяет, являются ли клиенты в очереди на обслуживание участниками акции и 
-     * если количество участников акции достигло максимального значения, то такие
-     * клиенты будут удалены из очереди и получат сообщение об отказе в обслуживании.
-     */
-    @Override
-    public void checkPromo(iActorBehaviour actor){
-        List<Actor> looserActors = new ArrayList<>();    
-        if (actor.getActor() instanceof PromoClient && PromoClient.getPromoNumber() >= PromoClient.getMaxPromoClients()){
-            looserActors.add(actor.getActor());
-            System.out.printf("К сожалению, %s, акция завершена.\n", actor.getActor().getName());
-        }    
-        releaseFromMarket(looserActors);    
-    }
 }
