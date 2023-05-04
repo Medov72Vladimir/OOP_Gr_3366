@@ -14,10 +14,10 @@ public class Student extends User implements Comparable<Student>{
 
     /**
      * Конструктор класса Student.
-     * @param firstName iмя студента
+     * @param firstName имя студента
      * @param secondName фамилия студента
      * @param age возраст студента
-     * @param studentID iдентификатор студента
+     * @param studentID идентификатор студента
      */
 
     public Student(String firstName, String secondName, int age, long studentID){
