@@ -1,6 +1,6 @@
-## Базовое задние: переписать код в соответствии с Single Responsibility Principle:
+*Базовое задние: переписать код в соответствии с Single Responsibility Principle:*
 
-public class Employee {
+### public class Employee {
     private String name;
     private Date dob;
     private int baseSalary;
@@ -18,4 +18,4 @@ public class Employee {
     }
 }
 
-## Подсказка: вынесите метод calculateNetSalary() в отдельный класс
+*Подсказка: вынесите метод calculateNetSalary() в отдельный класс*
